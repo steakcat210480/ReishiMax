@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>靈芝與女性健康 | ReishiMax GLp</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600;700;900&family=Noto+Sans+TC:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --deep: #1c1a2e;
+  --plum: #3d2a4a;
+  --mauve: #7b4f7a;
+  --rose: #c97a8a;
+  --blush: #e8b4bc;
+  --sage: #4a7c59;
+  --gold: #c9a84c;
+  --gold-lt: #e8c96a;
+  --cream: #faf5f0;
+  --warm: #f5ede8;
+  --ink: #1c1a2e;
+  --muted: #7a6f7a;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Noto Sans TC',sans-serif;background:var(--cream);color:var(--ink);overflow-x:hidden;}
+
+/* ─── HERO ─── */
+.hero{
+  background:var(--deep);
+  position:relative;
+  overflow:hidden;
+  padding:70px 60px 60px;
+}
+.hero::before{
+  content:'';position:absolute;top:-200px;right:-200px;
+  width:700px;height:700px;border-radius:50%;
+  background:radial-gradient(circle,rgba(201,122,138,0.12) 0%,transparent 70%);
+  pointer-events:none;
+}
+.hero::after{
+  content:'';position:absolute;bottom:-200px;left:-100px;
+  width:500px;height:500px;border-radius:50%;
+  background:radial-gradient(circle,rgba(74,124,89,0.1) 0%,transparent 70%);
+  pointer-events:none;
+}
+.hero-wrap{max-width:1100px;margin:0 auto;position:relative;z-index:2;}
+.hero-top{display:flex;justify-content:space-between;align-items:flex-start;gap:40px;flex-wrap:wrap;}
+.hero-brand{
+  font-family:'Playfair Display',serif;
+  font-style:italic;font-size:0.9rem;
+  color:var(--blush);letter-spacing:0.15em;margin-bottom:18px;
+}
+.hero-h1{
+  font-family:'Noto Serif TC',serif;font-weight:900;
+  font-size:3.2rem;line-height:1.1;color:#fff;margin-bottom:10px;
+}
+.hero-h1 em{color:var(--rose);font-style:normal;}
+.hero-sub{
+  font-size:1rem;color:rgba(255,255,255,0.55);
+  line-height:1.8;max-width:480px;margin-bottom:30px;
+}
+.hero-tags{display:flex;gap:8px;flex-wrap:wrap;}
+.htag{
+  border:1px solid rgba(201,122,138,0.35);
+  color:var(--blush);font-size:0.72rem;
+  padding:5px 12px;letter-spacing:0.08em;
+}
+.hero-stats{
+  display:grid;grid-template-columns:1fr 1fr;gap:1px;
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.07);
+  flex-shrink:0;align-self:flex-start;min-width:280px;
+}
+.hstat{
+  background:rgba(255,255,255,0.03);
+  padding:20px 24px;
+  border-bottom:1px solid rgba(255,255,255,0.05);
+}
+.hstat:last-child,.hstat:nth-child(3){border-bottom:none;}
+.hstat-n{
+  font-family:'Playfair Display',serif;
+  font-size:1.9rem;font-weight:700;color:var(--gold);line-height:1;
+}
+.hstat-l{font-size:0.7rem;color:rgba(255,255,255,0.45);margin-top:4px;line-height:1.4;}
+
+/* ─── THE CORE MECHANISM ─── */
+.mechanism{background:var(--warm);padding:0;}
+.mechanism-inner{
+  max-width:1100px;margin:0 auto;
+  padding:70px 60px;
+}
+.sec-label{
+  font-family:'Playfair Display',serif;font-style:italic;
+  font-size:0.85rem;color:var(--mauve);
+  letter-spacing:0.2em;margin-bottom:10px;
+}
+.sec-title{
+  font-family:'Noto Serif TC',serif;font-size:1.8rem;
+  font-weight:700;color:var(--deep);margin-bottom:10px;
+}
+.sec-intro{
+  font-size:0.9rem;color:var(--muted);line-height:1.9;
+  max-width:700px;margin-bottom:40px;
+}
+
+/* flow diagram */
+.flow{
+  display:flex;align-items:center;gap:0;
+  background:var(--deep);padding:28px 32px;
+  overflow-x:auto;
+}
+.flow-step{
+  display:flex;flex-direction:column;align-items:center;
+  text-align:center;flex:1;min-width:120px;padding:0 8px;
+}
+.flow-icon{font-size:1.5rem;margin-bottom:8px;}
+.flow-name{
+  font-family:'Noto Serif TC',serif;
+  font-size:0.78rem;font-weight:600;color:#fff;margin-bottom:4px;
+}
+.flow-desc{font-size:0.65rem;color:rgba(255,255,255,0.45);line-height:1.5;}
+.flow-arrow{color:var(--rose);font-size:1.4rem;flex-shrink:0;padding:0 4px;}
+
+.flow-branch{
+  display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px;
+}
+.branch-good{
+  background:rgba(74,124,89,0.08);
+  border:1px solid rgba(74,124,89,0.25);
+  border-left:3px solid var(--sage);
+  padding:16px 20px;
+}
+.branch-bad{
+  background:rgba(201,122,138,0.08);
+  border:1px solid rgba(201,122,138,0.25);
+  border-left:3px solid var(--rose);
+  padding:16px 20px;
+}
+.branch-label{
+  font-size:0.72rem;font-weight:700;
+  letter-spacing:0.08em;margin-bottom:6px;
+}
+.branch-good .branch-label{color:var(--sage);}
+.branch-bad .branch-label{color:var(--rose);}
+.branch-content{font-size:0.78rem;color:var(--muted);line-height:1.7;}
+.branch-content strong{color:var(--ink);}
+
+/* ─── CONDITIONS GRID ─── */
+.conditions{background:#fff;padding:0;}
+.conditions-inner{max-width:1100px;margin:0 auto;padding:70px 60px;}
+
+.cond-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;margin-top:10px;
+}
+.cond-card{
+  border:1px solid rgba(61,42,74,0.1);
+  overflow:hidden;
+  transition:all 0.3s ease;
+  cursor:default;
+}
+.cond-card:hover{
+  box-shadow:0 12px 40px rgba(61,42,74,0.1);
+  transform:translateY(-3px);
+}
+.cond-head{
+  padding:20px 22px 16px;
+  position:relative;overflow:hidden;
+}
+.cond-head::after{
+  content:attr(data-emoji);
+  position:absolute;right:16px;top:12px;
+  font-size:2rem;opacity:0.18;
+}
+.cond-num{
+  font-family:'Playfair Display',serif;
+  font-size:0.75rem;color:rgba(255,255,255,0.5);
+  letter-spacing:0.15em;margin-bottom:6px;
+}
+.cond-name{
+  font-family:'Noto Serif TC',serif;
+  font-size:1rem;font-weight:700;color:#fff;line-height:1.3;
+}
+.cond-en{font-size:0.68rem;color:rgba(255,255,255,0.4);margin-top:3px;letter-spacing:0.05em;}
+
+/* Color variants */
+.cc-plum .cond-head{background:linear-gradient(135deg,#3d2a4a,#5a3d6b);}
+.cc-rose .cond-head{background:linear-gradient(135deg,#7a3a4a,#a85060);}
+.cc-mauve .cond-head{background:linear-gradient(135deg,#5a3a6a,#7b4f7a);}
+.cc-sage .cond-head{background:linear-gradient(135deg,#2d5a3d,#4a7c59);}
+.cc-teal .cond-head{background:linear-gradient(135deg,#2a5a5a,#3d7a7a);}
+.cc-gold .cond-head{background:linear-gradient(135deg,#5a4a20,#8b6b30);}
+.cc-indigo .cond-head{background:linear-gradient(135deg,#2a2a5a,#3d3d7a);}
+.cc-earth .cond-head{background:linear-gradient(135deg,#5a3a2a,#7a5040);}
+
+.cond-body{padding:18px 22px 20px;background:white;}
+.cond-cause{
+  font-size:0.73rem;background:var(--warm);
+  border-left:2px solid var(--blush);
+  padding:7px 10px;margin-bottom:12px;color:var(--muted);
+  line-height:1.6;
+}
+.cond-cause strong{color:var(--rose);}
+.cond-helps{list-style:none;}
+.cond-helps li{
+  font-size:0.76rem;color:#555;
+  padding:5px 0 5px 18px;
+  border-bottom:1px dashed rgba(0,0,0,0.06);
+  position:relative;line-height:1.55;
+}
+.cond-helps li:last-child{border-bottom:none;}
+.cond-helps li::before{
+  content:'✦';color:var(--gold);
+  position:absolute;left:0;top:6px;font-size:0.55rem;
+}
+.cond-ref{
+  margin-top:12px;
+  font-size:0.68rem;
+  background:rgba(201,168,76,0.08);
+  border:1px solid rgba(201,168,76,0.2);
+  padding:7px 10px;color:#7a6a3a;
+  line-height:1.5;
+}
+
+/* ─── XENO / LIVER ─── */
+.xeno{background:var(--deep);padding:0;}
+.xeno-inner{max-width:1100px;margin:0 auto;padding:70px 60px;}
+.xeno-inner .sec-title{color:#fff;}
+.xeno-inner .sec-label{color:var(--rose);}
+.xeno-inner .sec-intro{color:rgba(255,255,255,0.5);}
+
+.xeno-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:10px;}
+
+.xeno-card{
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(255,255,255,0.07);
+  padding:28px;
+}
+.xeno-card-title{
+  font-family:'Noto Serif TC',serif;
+  font-size:1rem;font-weight:700;color:#fff;
+  margin-bottom:14px;display:flex;align-items:center;gap:10px;
+}
+.xc-icon{
+  width:32px;height:32px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:0.9rem;flex-shrink:0;
+}
+.xc-icon.rose{background:rgba(201,122,138,0.2);}
+.xc-icon.sage{background:rgba(74,124,89,0.2);}
+.xc-icon.gold{background:rgba(201,168,76,0.2);}
+.xc-icon.indigo{background:rgba(100,100,200,0.2);}
+
+.xeno-list{list-style:none;}
+.xeno-list li{
+  font-size:0.78rem;color:rgba(255,255,255,0.6);
+  padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05);
+  line-height:1.6;padding-left:16px;position:relative;
+}
+.xeno-list li:last-child{border-bottom:none;}
+.xeno-list li::before{
+  content:'→';color:var(--rose);
+  position:absolute;left:0;font-size:0.75rem;
+}
+.xeno-list li strong{color:rgba(255,255,255,0.9);}
+
+.xeno-flow{
+  margin-top:24px;
+  display:flex;flex-wrap:wrap;gap:8px;align-items:center;
+}
+.xf-pill{
+  background:rgba(201,122,138,0.12);
+  border:1px solid rgba(201,122,138,0.25);
+  color:var(--blush);font-size:0.72rem;
+  padding:6px 14px;
+}
+.xf-arr{color:var(--rose);font-size:1.1rem;}
+.xf-pill.good{
+  background:rgba(74,124,89,0.12);
+  border-color:rgba(74,124,89,0.25);
+  color:#90c4a0;
+}
+
+/* ─── RESEARCH ─── */
+.research{background:var(--warm);padding:0;}
+.research-inner{max-width:1100px;margin:0 auto;padding:70px 60px;}
+.research-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:10px;}
+.r-card{
+  background:white;
+  border:1px solid rgba(61,42,74,0.08);
+  padding:24px;
+  position:relative;overflow:hidden;
+  transition:all 0.3s;
+}
+.r-card:hover{box-shadow:0 8px 30px rgba(61,42,74,0.08);}
+.r-card::before{
+  content:attr(data-yr);
+  position:absolute;right:16px;top:4px;
+  font-family:'Playfair Display',serif;
+  font-size:4rem;font-weight:700;
+  color:rgba(61,42,74,0.04);line-height:1;pointer-events:none;
+}
+.r-tag{
+  display:inline-block;
+  border:1px solid rgba(201,122,138,0.3);
+  color:var(--mauve);font-size:0.68rem;
+  padding:3px 10px;letter-spacing:0.08em;margin-bottom:12px;
+}
+.r-text{
+  font-size:0.82rem;color:#444;line-height:1.8;
+}
+.r-text strong{color:var(--plum);}
+.r-src{
+  margin-top:10px;font-size:0.68rem;
+  color:rgba(0,0,0,0.35);font-style:italic;
+}
+
+/* ─── CERT ─── */
+.cert{background:#fff;padding:0;}
+.cert-inner{max-width:1100px;margin:0 auto;padding:70px 60px;}
+.cert-flex{display:flex;gap:16px;flex-wrap:wrap;margin-top:10px;}
+.cert-item{
+  flex:1;min-width:180px;
+  border:1px solid rgba(201,168,76,0.25);
+  padding:24px 20px;text-align:center;
+  position:relative;transition:all 0.3s;
+}
+.cert-item::before{
+  content:'';position:absolute;top:0;left:50%;
+  transform:translateX(-50%);
+  width:36px;height:3px;background:var(--gold);
+}
+.cert-item:hover{
+  border-color:var(--gold);
+  box-shadow:0 6px 24px rgba(201,168,76,0.12);
+}
+.cert-icon{font-size:1.8rem;margin-bottom:10px;}
+.cert-name{
+  font-family:'Noto Serif TC',serif;
+  font-size:0.88rem;font-weight:600;
+  color:var(--deep);margin-bottom:6px;line-height:1.5;
+}
+.cert-detail{font-size:0.72rem;color:var(--muted);line-height:1.7;}
+
+/* ─── DISCLAIMER / FOOTER ─── */
+.footer{background:var(--deep);padding:0;}
+.footer-inner{
+  max-width:1100px;margin:0 auto;
+  padding:40px 60px;
+  display:flex;justify-content:space-between;align-items:center;
+  flex-wrap:wrap;gap:20px;
+}
+.footer-brand{
+  font-family:'Playfair Display',serif;
+  font-size:1.1rem;color:var(--gold);letter-spacing:0.15em;
+}
+.footer-brand span{
+  display:block;font-size:0.68rem;
+  color:rgba(255,255,255,0.3);font-style:italic;margin-top:4px;letter-spacing:0.2em;
+}
+.footer-note{
+  font-size:0.68rem;color:rgba(255,255,255,0.25);
+  line-height:1.9;max-width:520px;text-align:right;
+}
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:768px){
+  .hero{padding:50px 24px 40px;}
+  .hero-h1{font-size:2.2rem;}
+  .hero-stats{grid-template-columns:1fr 1fr;min-width:unset;width:100%;}
+  .mechanism-inner,.conditions-inner,.xeno-inner,.research-inner,.cert-inner,.footer-inner{padding:50px 24px;}
+  .cond-grid{grid-template-columns:1fr;}
+  .flow-branch,.xeno-grid,.research-grid{grid-template-columns:1fr;}
+  .footer-note{text-align:left;}
+}
+</style>
+</head>
+<body>
+
+<!-- ════════════ HERO ════════════ -->
+<div class="hero">
+  <div class="hero-wrap">
+    <div class="hero-top">
+      <div>
+        <p class="hero-brand">PHARMANEX® ReishiMax GLp® × 女性健康</p>
+        <h1 class="hero-h1">靈芝守護<em>女性</em><br>從根源調理賀爾蒙</h1>
+        <p class="hero-sub">
+          環境賀爾蒙、壓力、飲食……現代女性面臨的賀爾蒙失衡風險前所未有。<br>
+          靈芝透過護肝解毒、免疫調節與抗增殖三重機制，守護女性從子宮到甲狀腺的全方位健康。
+        </p>
+        <div class="hero-tags">
+          <span class="htag">衛署健食字 A00023號</span>
+          <span class="htag">免疫調節 × 護肝雙認證</span>
+          <span class="htag">台大醫學院實驗驗證</span>
+          <span class="htag">2002 國家生技醫療品質獎</span>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat">
+          <div class="hstat-n">13.5%</div>
+          <div class="hstat-l">靈芝多醣體<br>免疫調節核心</div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-n">6.0%</div>
+          <div class="hstat-l">靈芝三萜類<br>護肝賀爾蒙調節</div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-n">-48%</div>
+          <div class="hstat-l">降低血清 GPT<br>中國醫藥學院驗證</div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-n">≈100%</div>
+          <div class="hstat-l">破壁孢子技術<br>完整釋出活性成分</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════ CORE MECHANISM ════════════ -->
+<div class="mechanism">
+  <div class="mechanism-inner">
+    <p class="sec-label">Core Mechanism</p>
+    <h2 class="sec-title">根源：肝臟是女性賀爾蒙健康的關鍵</h2>
+    <p class="sec-intro">
+      女性體內的雌激素必須經過肝臟代謝才能排出。肝臟健康與否，直接決定雌激素走向「保護路徑」還是「致病路徑」。
+      靈芝護肝，就是在保護女性賀爾蒙走向正確方向。
+    </p>
+
+    <div class="flow">
+      <div class="flow-step">
+        <div class="flow-icon">🌿</div>
+        <div class="flow-name">環境賀爾蒙進入體內</div>
+        <div class="flow-desc">塑膠、農藥、保養品中的仿雌激素化合物</div>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">
+        <div class="flow-icon">🏭</div>
+        <div class="flow-name">肝臟 CYP450 酵素</div>
+        <div class="flow-desc">解毒系統負責代謝雌激素與外來毒素</div>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">
+        <div class="flow-icon">⚖️</div>
+        <div class="flow-name">代謝方向決定命運</div>
+        <div class="flow-desc">肝臟狀況決定走哪條路</div>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">
+        <div class="flow-icon">💚</div>
+        <div class="flow-name">2-MeO（安全）</div>
+        <div class="flow-desc">或</div>
+      </div>
+      <div class="flow-arrow">→</div>
+      <div class="flow-step">
+        <div class="flow-icon">⚠️</div>
+        <div class="flow-name">16α-OHE1（致病）</div>
+        <div class="flow-desc">促進異常增生</div>
+      </div>
+    </div>
+
+    <div class="flow-branch">
+      <div class="branch-good">
+        <div class="branch-label">✓ 肝臟健康時（靈芝護肝後）</div>
+        <div class="branch-content">
+          雌激素往 <strong>2-甲氧基雌酮（2-MeO）</strong> 方向代謝，毒性最弱，可抑制腫瘤形成，子宮肌瘤、乳腺結節、子宮瘜肉風險降低。
+        </div>
+      </div>
+      <div class="branch-bad">
+        <div class="branch-label">✗ 肝臟解毒不足時（環境賀爾蒙累積）</div>
+        <div class="branch-content">
+          雌激素轉向 <strong>16α-羥基雌酮（16α-OHE1）</strong>，高活性、高毒性，促進子宮肌瘤、子宮內膜癌、乳癌、子宮瘜肉等異常細胞增生。
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════ CONDITIONS ════════════ -->
+<div class="conditions">
+  <div class="conditions-inner">
+    <p class="sec-label">Women's Health Conditions</p>
+    <h2 class="sec-title">靈芝對八大婦女健康問題的幫助</h2>
+
+    <div class="cond-grid">
+
+      <!-- 子宮肌瘤 -->
+      <div class="cond-card cc-plum">
+        <div class="cond-head" data-emoji="🔴">
+          <div class="cond-num">01</div>
+          <div class="cond-name">子宮肌瘤</div>
+          <div class="cond-en">Uterine Fibroids</div>
+        </div>
+        <div class="cond-body">
+          <div class="cond-cause"><strong>根源：</strong>雌激素過高或代謝異常，刺激子宮平滑肌細胞異常增生</div>
+          <ul class="cond-helps">
+            <li>護肝支援 CYP450 酵素，促進雌激素安全代謝，減少刺激肌瘤增長的過剩雌激素</li>
+            <li>三萜類具抗增殖作用，可干擾異常細胞的增殖信號</li>
+            <li>抗氧化與抗發炎效果，降低慢性炎症對子宮的刺激</li>
+            <li>多醣體調節免疫，提升免疫細胞對異常增生組織的清除能力</li>
+          </ul>
+          <div class="cond-ref">📚 研究指出靈芝三萜類能抑制 NF-κB 信號通路（刺激平滑肌增生的重要路徑）</div>
+        </div>
+      </div>
+
+      <!-- 乳腺結節 -->
+      <div class="cond-card cc-rose">
+        <div class="cond-head" data-emoji="🩷">
+          <div class="cond-num">02</div>
+          <div class="cond-name">乳腺結節</div>
+          <div class="cond-en">Breast Nodules</div>
+        </div>
+        <div class="cond-body">
+          <div class="cond-cause"><strong>根源：</strong>雌激素受體過度活化，乳腺組織細胞異常增生</div>
+          <ul class="cond-helps">
+            <li>下調 ERα 雌激素受體表現，減少乳腺細胞對雌激素的過度敏感</li>
+            <li>抑制 Akt/NF-κB 信號通路，阻斷細胞增殖訊號</li>
+            <li>引發異常增生細胞的細胞週期停滯（G0/G1 期）</li>
+            <li>護肝助雌激素安全代謝，從源頭減少刺激乳腺組織的過活雌激素</li>
+          </ul>
+          <div class="cond-ref">📚 PubMed：靈芝同時抑制雌激素依賴型（MCF-7）與非依賴型（MDA-MB-231）乳癌細胞增殖（2006）</div>
+        </div>
+      </div>
+
+      <!-- 子宮瘜肉 -->
+      <div class="cond-card cc-mauve">
+        <div class="cond-head" data-emoji="🌸">
+          <div class="cond-num">03</div>
+          <div class="cond-name">子宮瘜肉</div>
+          <div class="cond-en">Uterine Polyps</div>
+        </div>
+        <div class="cond-body">
+          <div class="cond-cause"><strong>根源：</strong>子宮內膜受雌激素過度刺激，局部過度增生形成息肉</div>
+          <ul class="cond-helps">
+            <li>護肝幫助過剩雌激素正常代謝，減少內膜受異常刺激</li>
+            <li>多醣體強化免疫監控，提升對異常增生組織的識別與清除</li>
+            <li>抗炎機制降低子宮慢性發炎，減少息肉形成誘因</li>
+            <li>調節 T 細胞功能，改善免疫系統對子宮局部環境的保護</li>
+          </ul>
+          <div class="cond-ref">📚 靈芝萃取物對子宮內膜癌細胞株 HEC-1-A 和 KLE 具有抑制增殖與促進凋亡的效果（PMC，2024）</div>
+        </div>
+      </div>
+
+      <!-- 肌腺症 -->
+      <div class="cond-card cc-sage">
+        <div class="cond-head" data-emoji="🔥">
+          <div class="cond-num">04</div>
+          <div class="cond-name">肌腺症（子宮腺肌症）</div>
+          <div class="cond-en">Adenomyosis</div>
+        </div>
+        <div class="cond-body">
+          <div class="cond-cause"><strong>根源：</strong>雌激素依賴性慢性發炎疾病，子宮內膜組織侵入子宮肌層，痛經劇烈</div>
+          <ul class="cond-helps">
+            <li>靈芝強力抗炎效果，降低子宮內異位組織引發的全身慢性炎症反應</li>
+            <li>免疫調節修復失調的免疫監控，減少異位內膜組織的擴散</li>
+            <li>護肝助雌激素代謝，肌腺症屬雌激素依賴疾病，降低雌激素刺激是核心策略</li>
+            <li>多醣體雙向調節免疫（Th1/Th2 平衡），改善免疫失衡造成的內膜侵入問題</li>
+          </ul>
+          <div class="cond-ref">📚 PMC 藥用真菌文獻指出：靈芝有助改善免疫失調合併子宮內膜異位症狀（需免疫刺激者）</div>
+        </div>
+      </div>
+
+      <!-- 甲狀腺結節 -->
+      <div class="cond-card cc-teal">
+        <div class="cond-head" data-emoji="🦋">
+          <div class="cond-num">05</div>
+          <div class="cond-name">甲狀腺結節</div>
+          <div class="cond-en">Thyroid Nodules</div>
+        </div>
+        <div class="cond-body">
+          <div class="cond-cause"><strong>根源：</strong>多與免疫失調（橋本氏甲狀腺炎）或環境毒素累積有關，常與雌激素失衡並存</div>
+          <ul class="cond-helps">
+            <li>靈芝多醣體雙向調節免疫：免疫過激時（橋本氏病）可降低自體攻擊，作為適應原（Adaptogen）</li>
+            <li>護肝支援甲狀腺素（T4→T3）在肝臟的轉化，甲狀腺功能間接受益</li>
+            <li>抗氧化減少氧化壓力對甲狀腺細胞的損傷，降低結節形成誘因</li>
+            <li>針對葛瑞夫茲氏病（甲亢）小鼠實驗：靈芝多醣體顯著改善甲亢引發的肝損傷（ALT、ALP下降）</li>
+          </ul>
+          <div class="cond-ref">📚 中國醫學研究：靈芝多醣體改善葛瑞夫茲氏病小鼠之肝臟損傷，甲亢相關 ALT 與 ALP 顯著降低（2013）</div>
+        </div>
+      </div>
+
+      <!-- 婦科癌症 -->
+      <div class="cond-card cc-gold">
+        <div class="cond-head" data-emoji="🎗️">
+          <div class="cond-num">06</div>
+          <div class="cond-name">婦科相關癌症</div>
+          <div class="cond-en">Gynecological Cancers</div>
+        </div>
+        <div class="cond-body">
+          <div class="cond-cause"><strong>涵蓋：</strong>乳癌、卵巢癌、子宮內膜癌、子宮頸癌、甲狀腺癌</div>
+          <ul class="cond-helps">
+            <li>卵巢癌：劑量依賴性抑制細胞增生、移行、球體形成；增強順鉑（cisplatin）敏感性</li>
+            <li>子宮內膜癌：靈芝萃取物抑制 Rap1 信號通路，誘導細胞凋亡，G1 期停滯</li>
+            <li>乳癌：下調 ERα、抑制 Akt/NF-κB，對化療抗藥性乳癌細胞仍有效</li>
+            <li>輔助化放療：與正規治療合用，Cochrane 回顧顯示免疫細胞（CD3/CD4/CD8）顯著提升</li>
+            <li>聯合綠茶萃取物動物實驗：腫瘤重量減輕 45.2%（p=0.024）</li>
+          </ul>
+          <div class="cond-ref">📚 PubMed / PMC / Cochrane 系統性回顧，多篇研究涵蓋體外、動物及臨床研究</div>
+        </div>
+      </div>
+
+      <!-- 排除環境賀爾蒙 -->
+      <div class="cond-card cc-indigo">
+        <div class="cond-head" data-emoji="☠️">
+          <div class="cond-num">07</div>
+          <div class="cond-name">排除環境賀爾蒙</div>
+          <div class="cond-en">Xenoestrogen Detox</div>
+        </div>
+        <div class="cond-body">
+          <div class="cond-cause"><strong>威脅：</strong>BPA、農藥、塑化劑、化妝品防腐劑等化學物質模仿雌激素，累積在體內造成賀爾蒙失衡</div>
+          <ul class="cond-helps">
+            <li>護肝強化第一相（CYP450）與第二相解毒系統，加速外來毒素代謝排出</li>
+            <li>靈芝多醣體促進 CYP2E1、CYP1A2 等解毒酵素的活性</li>
+            <li>抗氧化保護肝細胞免受毒素損傷，維持解毒功能長期穩定</li>
+            <li>免疫調節提升身體對環境毒素的整體防禦能力</li>
+          </ul>
+          <div class="cond-ref">📚 研究顯示靈芝多醣體對肝臟 CYP450 酵素系統有保護與調節作用（Wang et al.）</div>
+        </div>
+      </div>
+
+      <!-- 免疫相關婦科問題 -->
+      <div class="cond-card cc-earth">
+        <div class="cond-head" data-emoji="🛡️">
+          <div class="cond-num">08</div>
+          <div class="cond-name">免疫相關婦科問題</div>
+          <div class="cond-en">Immune-Related Conditions</div>
+        </div>
+        <div class="cond-body">
+          <div class="cond-cause"><strong>涵蓋：</strong>子宮內膜異位症、骨盆腔炎、反覆感染、自體免疫相關婦科疾病</div>
+          <ul class="cond-helps">
+            <li>台大醫學院：靈芝多醣體使免疫球蛋白提升 25%，白介素-2 提升 405%</li>
+            <li>促進 NK 細胞活性，加強對感染病原體與異常細胞的清除</li>
+            <li>多醣體雙向調節：過強的自體免疫反應可被抑制（如子宮內膜異位症的免疫異常）</li>
+            <li>2021年臨床研究：乳癌術後患者服用靈芝孢子粉，免疫指標（NK cell、CD4/CD8比值）動態改善</li>
+          </ul>
+          <div class="cond-ref">📚 Clin Transl Oncol 2021：靈芝孢子粉在乳癌與肺癌術後患者中的免疫調節效益</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ════════════ XENO / LIVER ════════════ -->
+<div class="xeno">
+  <div class="xeno-inner">
+    <p class="sec-label">Liver × Hormone Connection</p>
+    <h2 class="sec-title">環境賀爾蒙：現代女性的隱形威脅</h2>
+    <p class="sec-intro">環境賀爾蒙（仿雌激素）無所不在，靈芝透過護肝強化解毒系統是最關鍵的防線。</p>
+
+    <div class="xeno-grid">
+      <div class="xeno-card">
+        <div class="xeno-card-title">
+          <span class="xc-icon rose">☠️</span>
+          常見環境賀爾蒙來源
+        </div>
+        <ul class="xeno-list">
+          <li><strong>塑膠製品：</strong>BPA、塑化劑（瓶裝水、食品包裝、微波加熱容器）</li>
+          <li><strong>農藥殘留：</strong>有機氯類農藥，廣泛存在於非有機蔬果</li>
+          <li><strong>保養品／化妝品：</strong>Paraben 防腐劑、UV 遮光劑</li>
+          <li><strong>清潔用品：</strong>洗衣精、沐浴乳中的界面活性劑</li>
+          <li><strong>自來水：</strong>工業汙染殘留、激素類藥物殘留</li>
+        </ul>
+      </div>
+
+      <div class="xeno-card">
+        <div class="xeno-card-title">
+          <span class="xc-icon sage">🌿</span>
+          靈芝如何對抗環境賀爾蒙
+        </div>
+        <ul class="xeno-list">
+          <li><strong>護肝強化 CYP450：</strong>肝臟酵素是代謝外來化學物質的主力，靈芝保護並強化此系統</li>
+          <li><strong>抗氧化清除自由基：</strong>環境毒素大量產生氧化壓力，靈芝三萜類提供抗氧化保護</li>
+          <li><strong>抗雌激素效果：</strong>下調 ERα 受體，讓仿雌激素「插不進去」細胞的受體位點</li>
+          <li><strong>免疫調節：</strong>提升免疫細胞對化學毒素影響的抵抗力與修復力</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="margin-top:24px;">
+      <div style="font-size:0.78rem;color:rgba(255,255,255,0.4);margin-bottom:12px;letter-spacing:0.1em;">環境賀爾蒙→賀爾蒙失衡→常見疾病連鎖反應：</div>
+      <div class="xeno-flow">
+        <span class="xf-pill">環境賀爾蒙進入體內</span>
+        <span class="xf-arr">→</span>
+        <span class="xf-pill">雌激素過剩 / 代謝異常</span>
+        <span class="xf-arr">→</span>
+        <span class="xf-pill">PMS、經痛加劇</span>
+        <span class="xf-arr">→</span>
+        <span class="xf-pill">子宮肌瘤 / 乳腺結節</span>
+        <span class="xf-arr">→</span>
+        <span class="xf-pill">子宮內膜癌 / 乳癌風險↑</span>
+      </div>
+      <div class="xeno-flow" style="margin-top:10px;">
+        <span class="xf-pill good">靈芝護肝解毒</span>
+        <span class="xf-arr" style="color:#90c4a0;">→</span>
+        <span class="xf-pill good">CYP450 正常運作</span>
+        <span class="xf-arr" style="color:#90c4a0;">→</span>
+        <span class="xf-pill good">雌激素安全代謝</span>
+        <span class="xf-arr" style="color:#90c4a0;">→</span>
+        <span class="xf-pill good">異常增生風險降低</span>
+        <span class="xf-arr" style="color:#90c4a0;">→</span>
+        <span class="xf-pill good">女性健康維護</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════ RESEARCH ════════════ -->
+<div class="research">
+  <div class="research-inner">
+    <p class="sec-label">Global Clinical Evidence</p>
+    <h2 class="sec-title">全球醫學研究支持</h2>
+    <div class="research-grid">
+
+      <div class="r-card" data-yr="2024">
+        <span class="r-tag">子宮內膜癌 ｜ PMC 2024</span>
+        <p class="r-text">針對子宮內膜癌細胞株（HEC-1-A、KLE）的體外實驗，靈芝萃取物透過 <strong>Rap1 信號通路</strong>抑制癌細胞增殖、移行，促進細胞凋亡，並將細胞週期阻滯於 G1 期。</p>
+        <p class="r-src">PMC – Efficacy of Ganoderma lucidum Extracts on Endometrial Cancer, 2024</p>
+      </div>
+
+      <div class="r-card" data-yr="PubMed">
+        <span class="r-tag">卵巢癌 ｜ PubMed</span>
+        <p class="r-text">靈芝對卵巢癌細胞（EOC）呈現<strong>劑量依賴性</strong>強力抑制，包括化療敏感與<strong>化療抗藥性細胞株</strong>均有效。靈芝與順鉑（cisplatin）合用，抑制效果顯著增強；機制包含 p53 上調與 Akt 下調，誘發 G2/M 期停滯。</p>
+        <p class="r-src">PubMed – Ganoderma lucidum anti-tumor effects on ovarian cancer, 2011</p>
+      </div>
+
+      <div class="r-card" data-yr="2006">
+        <span class="r-tag">乳腺 ｜ PubMed</span>
+        <p class="r-text">靈芝透過<strong>下調 ERα 雌激素受體</strong>、抑制 NF-κB 活性及下調 c-myc 基因，同時對「雌激素依賴型」與「雌激素非依賴型」乳癌細胞均有抑制效果，研究者建議靈芝適合作為乳癌的<strong>化學預防藥材</strong>。</p>
+        <p class="r-src">PubMed – Ganoderma inhibits breast cancer via ER and NF-κB signaling, 2006</p>
+      </div>
+
+      <div class="r-card" data-yr="2021">
+        <span class="r-tag">乳癌術後免疫 ｜ Clin Transl Oncol 2021</span>
+        <p class="r-text">乳癌及肺癌術後患者服用<strong>靈芝孢子粉</strong>後，追蹤免疫生物標記發現 NK 細胞活性、CD4/CD8 比值等關鍵免疫指標出現<strong>動態性改善</strong>，術後恢復期免疫功能顯著強化。</p>
+        <p class="r-src">Deng Y, et al. Clin Transl Oncol. 2021 Jul;23(7):1481-1490</p>
+      </div>
+
+      <div class="r-card" data-yr="2013">
+        <span class="r-tag">甲狀腺 ｜ 中國醫學 2013</span>
+        <p class="r-text">葛瑞夫茲氏病（甲亢）動物模型研究顯示，靈芝多醣體顯著改善<strong>甲亢引起的肝損傷</strong>，ALT、ALP 指數改善（p＜0.05）；低劑量靈芝組亦優於純水對照組。提示靈芝對甲狀腺自體免疫疾病的肝臟保護意義。</p>
+        <p class="r-src">趙澤飛等，上海交通大學學報（醫學版），2013</p>
+      </div>
+
+      <div class="r-card" data-yr="Cochrane">
+        <span class="r-tag">輔助化療 ｜ Cochrane 系統性回顧</span>
+        <p class="r-text">癌症患者接受<strong>靈芝輔助化放療</strong>，整體治療反應優於單純化放療，CD3、CD4、CD8 免疫細胞數量顯著提升。靈芝作為輔助治療的安全性與免疫效益獲 Cochrane 層級的文獻支持。</p>
+        <p class="r-src">Cochrane Database of Systematic Reviews – Ganoderma lucidum for cancer treatment</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ════════════ CERT ════════════ -->
+<div class="cert">
+  <div class="cert-inner">
+    <p class="sec-label">Certifications</p>
+    <h2 class="sec-title">品質保證與認證</h2>
+    <div class="cert-flex">
+      <div class="cert-item">
+        <div class="cert-icon">🏅</div>
+        <div class="cert-name">免疫調節<br>健康食品認證</div>
+        <div class="cert-detail">衛署健食字第A00023號<br>促進抗體生成 × T細胞調節</div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-icon">💚</div>
+        <div class="cert-name">護肝功能<br>健康食品認證</div>
+        <div class="cert-detail">降低血清 GPT -48%<br>降低血清 GOT -39%</div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-icon">🏆</div>
+        <div class="cert-name">2002 國家<br>生技醫療品質獎</div>
+        <div class="cert-detail">生醫界最高榮譽<br>代表品質最高指標</div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-icon">🔬</div>
+        <div class="cert-name">全方位<br>安全評估</div>
+        <div class="cert-detail">28天毒性試驗 × 染色體分析<br>微核分析 × 基因突變分析</div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-icon">🌿</div>
+        <div class="cert-name">椴木栽培<br>純淨產地</div>
+        <div class="cert-detail">一根椴木一株赤芝<br>二作三休輪耕，確保品質</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════ FOOTER ════════════ -->
+<div class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      PHARMANEX® ReishiMax GLp®
+      <span>如新華茂超級靈芝 × 女性健康</span>
+    </div>
+    <p class="footer-note">
+      本資料整合產品科學文獻與全球醫學研究，供健康資訊參考。<br>
+      靈芝為輔助保健用途，不能取代正規醫療診斷與治療。<br>
+      有特殊疾病或正在接受治療者，補充前請務必諮詢主治醫師。
+    </p>
+  </div>
+</div>
+
+</body>
+</html>
